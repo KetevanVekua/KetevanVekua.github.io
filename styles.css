@@ -359,16 +359,18 @@ textarea {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
   border-radius: 4px;
   box-sizing: border-box;
   outline: none;
+  background-color: #eee;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   border-color: #71bdf4;
+  background-color: #ffffff;
 }
 
 textarea {
@@ -397,6 +399,7 @@ input[type="submit"]:hover {
     padding: 10px;
   }
 }
+
 
 JavaScript (script.js):
 
