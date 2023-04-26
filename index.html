@@ -61,23 +61,35 @@ title.addEventListener('mouseout', resetTitle);
 
 <script>
 
-// Add this code for the hamburger menu functionality
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-const navList = document.querySelector("nav ul");
+document.addEventListener("DOMContentLoaded", function () {
+  const navItems = document.querySelectorAll("nav ul li a");
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const navList = document.querySelector("nav ul");
+  const portfolioDescriptions = document.querySelectorAll(".grid-item p");
 
-hamburgerMenu.addEventListener("click", () => {
-  navList.classList.toggle("show");
-});
- </script>
+  navItems.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = e.target.getAttribute("href");
+      const targetElement = document.querySelector(target);
 
-<script>
-// Add this code for the portfolio description fade-in effect
-const portfolioDescriptions = document.querySelectorAll(".grid-item p");
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
 
- 
-portfolioDescriptions.forEach((description) => {
-  description.addEventListener("click", () => {
-    description.classList.toggle("show-more");
+  hamburgerMenu.addEventListener("click", () => {
+    navList.classList.toggle("show");
+  });
+
+  portfolioDescriptions.forEach((description) => {
+    description.addEventListener("click", () => {
+      description.classList.toggle("show-more");
+    });
   });
 });
 
