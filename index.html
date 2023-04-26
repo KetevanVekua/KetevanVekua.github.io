@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketevan Vekua - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+function animateTitle() {
+  const letters = document.querySelectorAll('.letter');
+  
+  letters.forEach((letter, index) => {
+    setTimeout(() => {
+      const randomX = Math.random() * 100 - 50;
+      const randomY = Math.random() * 100 - 50;
+      
+      letter.style.transform = `translate(${randomX}px, ${randomY}px)`;
+      letter.style.opacity = 0;
+    }, 100 * index);
+  });
+}
+
+const title = document.querySelector('.title');
+title.addEventListener('mouseover', animateTitle);
+});
+  </script>
+
+ <script>
+document.addEventListener("DOMContentLoaded", function() {
+function resetTitle() {
+  const letters = document.querySelectorAll('.letter');
+  
+  letters.forEach((letter) => {
+    letter.style.transform = 'translate(0, 0)';
+    letter.style.opacity = 1;
+  });
+}
+});
+  </script>
+
+ <script>
+document.addEventListener("DOMContentLoaded", function() {
+const title = document.querySelector('#title'); // Assuming you've given the title element an ID of 'title'
+function resetTitle() {
+  const letters = document.querySelectorAll('.letter');
+  
+  letters.forEach((letter) => {
+    letter.style.transform = 'translate(0, 0)';
+    letter.style.opacity = 1;
+  });
+}
+
+title.addEventListener('mouseout', resetTitle);
+
+});
+ </script>
+
+<script>
+
+// Add this code for the hamburger menu functionality
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const navList = document.querySelector("nav ul");
+
+hamburgerMenu.addEventListener("click", () => {
+  navList.classList.toggle("show");
+});
+
+// Add this code for the portfolio description fade-in effect
+const portfolioDescriptions = document.querySelectorAll(".grid-item p");
+
+portfolioDescriptions.forEach((description) => {
+  description.addEventListener("click", () => {
+    description.classList.toggle("show-more");
+  });
+});
+
+</script>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+
+  <header>
+    <nav>
+<a href="#">
+  <h1 class="title">
+    <span class="letter">K</span>
+    <span class="letter">e</span>
+    <span class="letter">t</span>
+    <span class="letter">e</span>
+    <span class="letter">v</span>
+    <span class="letter">a</span>
+    <span class="letter">n</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">V</span>
+    <span class="letter">e</span>
+    <span class="letter">k</span>
+    <span class="letter">u</span>
+    <span class="letter">a</span>
+  </h1>
+</a>
+ <i class="hamburger-menu">&#9776;</i>
+	<ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+	 <video class="hero-video" autoplay loop muted playsinline poster="hero.jpg">
+    <source src="cucugnan.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+      <div class="container">
+        <h1>Ketevan Vekua</h1>
+        <p>Animatrice 2D numérique et traditionelle</p>
+        <a href="#portfolio" class="cta">Découvrez mes réalisations</a>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="grid">
+          <!-- Ajoutez vos réalisations ici -->
+<div class="grid-item project1">
+    <img src="projet_en_cours1.jpg" alt="Projet en cours 1">
+    <h3>(en développement) Série TV "Mots oubliés"</h3>
+    <p>"Mots oubliés" est une série télévisée qui suit un ours et un garçon alors qu'ils pêchent des mots oubliés dans une rivière géorgienne. Leur but est d'enseigner ces mots rares aux adultes et aux enfants à travers chaque épisode de la série. </p>
+<p>La série est produite par les studios de films "Kvali XXI" et "Georgian Film-Abkhazeti". En tant que membre clé de l'équipe de production, j'ai écrit le scénario, conçu les personnages et les décors, ainsi que créé le storyboard pour chaque épisode en cours de production.</p>
+	</div>
+          <div class="grid-item">
+        
+    <video src="projet1.mp4" poster="projet1.jpg" alt="Antochka" controls></video>
+            <h3>Antochka</h3>
+            <p>Animation mettant en scène des personnages sous forme de marionnettes dessinées à la main. Réalisée avec le logiciel CelAction, cette séquence d'animation montre des techniques d'animation traditionnelles combinées à des outils numériques modernes</p>
+          </div>
+          <div class="grid-item">
+            <video src="projet2.mp4" poster="projet2.jpg" alt="Vapeur " controls></video>
+            <h3>Vapeur</h3>
+            <p>"Vapeur" est une animation qui nous emmène à suivre le voyage d'un bus, naviguant entre rêve et réalité. Le rythme de la sonnette guide le spectateur tout au long de cette aventure visuelle. Entièrement dessinée et animée à la main. Montée avec soin sur Adobe Premiere.</p>
+          </div>
+
+	 <div class="grid-item">
+            <video src="projet3.mp4" poster="projet3.jpg" alt="Reka " controls></video>
+            <h3>Reka (trailer)</h3>
+	    <p>Le vent dans le sable - Un moment intemporel dans les roseaux, entre l'enfance et sa disparition, fixé dans des lignes qui ressemblent à des poèmes haïkus. Des dessins tendres en noir et blanc d'après un poème d'Arseni Tarkowski, le père du célèbre réalisateur.</p>
+          </div>
+
+	 <div class="grid-item">
+            <video src="projet4.mp4" poster="projet4.jpg" alt="Dans la terre " controls></video>
+            <h3>Dans la terre (teaser)</h3>
+	    <p>"Dans la terre" est une animation réalisée à KASK en utilisant différentes techniques, notamment la peinture sur verre, la stop motion et les éléments organiques.</p>
+          </div>
+
+          <!-- Continuez d'ajouter d'autres réalisations -->
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>À propos</h2>
+        <div class="about-content">
+          <img src="ketevan.jpg" alt="Ketevan Vekua">
+          <div class="about-text">
+
+<p>Bonjour ! Je suis Ketevan Vekua, animatrice passionnée par la création d'animations 2D. J'ai travaillé avec divers studios tels que Beast Animation et Zorobabel, ainsi qu'à l'étranger, en Géorgie. Je suis diplômée de Belgium KASK (The Royal Academy of Fine Arts) en animation.</p>
+<p>Fort de ces expériences, j'ai développé une expertise en matière d'animation et de motion design.</p><br>
+<p>Si vous avez un projet en tête ou souhaitez en savoir plus sur mon travail, n'hésitez pas à me contacter.</p>
+            <p>Je suis toujours à la recherche de nouvelles opportunités pour améliorer mes compétences et créer des animations de qualité pour mes clients. Si vous avez un projet en tête ou souhaitez en savoir plus sur mon travail, n'hésitez pas à me contacter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contactez-moi</h2>
+        <form action="contact.php" method="POST">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+<input type="submit" value="Envoyer">
+</form>
+</div>
+</section>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2023 Ketevan Vekua - Tous droits réservés</p>
+    </div>
+  </footer>
+</body>
+</html>
+
