@@ -79,6 +79,9 @@ nav ul li a {
   .hamburger-menu {
     display: block;
   }
+   nav ul.show {
+    display: block;
+  }
 }
 
 /* Add this CSS for the portfolio description fade-in effect */
