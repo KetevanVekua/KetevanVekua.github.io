@@ -111,6 +111,26 @@ nav ul li a {
   }
 }
 
+/* Add these CSS styles for the mobile menu */
+nav ul.show {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+nav ul.show li {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+nav ul.show li:last-child {
+  border-bottom: none;
+}
 
 
 /* Hero Section */
