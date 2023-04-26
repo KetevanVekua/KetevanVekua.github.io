@@ -60,42 +60,44 @@ title.addEventListener('mouseout', resetTitle);
  </script>
 
 <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scrolling for nav links
+    const navItems = document.querySelectorAll("nav ul li a");
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Smooth scrolling for nav links
-  const navItems = document.querySelectorAll("nav ul li a");
+    navItems.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        const target = e.target.getAttribute("href");
+        const targetElement = document.querySelector(target);
 
-  navItems.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      e.preventDefault();
-      const target = e.target.getAttribute("href");
-      const targetElement = document.querySelector(target);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+          });
+        }
+      });
+    });
 
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop,
-          behavior: "smooth",
-        });
-      }
+    // Handle hamburger menu click
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const navMenu = document.querySelector("nav ul");
+
+    hamburgerMenu.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+
+    // Define portfolioDescriptions variable
+    const portfolioDescriptions = document.querySelectorAll(".grid-item p");
+
+    portfolioDescriptions.forEach((description) => {
+      description.addEventListener("click", () => {
+        description.classList.toggle("show-more");
+      });
     });
   });
-
-  // Handle hamburger menu click
-  const hamburgerMenu = document.querySelector(".hamburger-menu");
-  const navMenu = document.querySelector("nav ul");
-
-  hamburgerMenu.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
-  });
-
-  portfolioDescriptions.forEach((description) => {
-    description.addEventListener("click", () => {
-      description.classList.toggle("show-more");
-    });
-  });
-});
-
 </script>
+	
   <style>
     .grid {
       display: grid;
