@@ -334,6 +334,69 @@ footer p {
 margin: 0;
 }
 
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #71bdf4;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  background-color: #71bdf4;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #5090d1;
+}
+
+@media (max-width: 500px) {
+  form {
+    padding: 10px;
+  }
+}
 
 JavaScript (script.js):
 
