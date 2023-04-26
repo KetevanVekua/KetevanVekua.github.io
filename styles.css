@@ -72,9 +72,23 @@ nav ul li a {
 }
 
 @media screen and (max-width: 767px) {
-  nav ul {
-    display: none;
-  }
+  header {
+  position: relative;
+}
+
+nav ul {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  list-style-type: none;
+  padding: 0;
+  display: none;
+  /* Add a box-shadow and border-radius for better appearance */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 5px 5px;
+}
+
 
   .hamburger-menu {
     display: block;
