@@ -1,181 +1,246 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)https://readymag.com/u145854748/4319212/ -->
-<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths no-retina no-android no-amazonsilk mac no-windows webkit no-opera chrome no-msie no-msie11 no-winphone8 no-safari no-safari5 no-isipad no-ismobile no-firefox no-edge csspositionsticky isdesktop no-istablet no-isphone new-settings mobile-screenshots wf-jcyh-i3-active wf-jcyh-n4-active wf-active page-loaded" style="--min-desktop-width:769px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="noindex,nofollow"><meta name="generator" content="Readymag" data-project="4319212" data-user="u145854748" data-is-exported="false"><meta name="referrer" content="always"><meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,minimal-ui"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Project"><link rel="preload" as="style" href="https://readymag.com/api/fonts/webtype/css?domain=readymag.com&amp;md5=tIroNivyyyJPSx_NomTzlw" class=""><link rel="preload" as="style" href="https://readymag.com/api/fonts/typetoday/css?domain=readymag.com&amp;md5=tY8jLN_3kwpxC9RAzXG9zQ" class=""><link rel="icon" href="https://readymag.com/dist/img/favicons/favicon.ico" type="image/x-icon" class=""><link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://readymag.com/dist/img/favicons/apple-touch-icon-144x144-precomposed.png" class=""><link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://readymag.com/dist/img/favicons/apple-touch-icon-114x114-precomposed.png" class=""><link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://readymag.com/dist/img/favicons/apple-touch-icon-72x72-precomposed.png" class=""><link rel="apple-touch-icon-precomposed" href="https://readymag.com/dist/img/favicons/apple-touch-icon-precomposed.png" class=""><link rel="prev" href="https://readymag.com/u145854748/4319212/" class=""><link rel="canonical" href="https://readymag.com/u145854748/4319212/" class=""><meta content="955357184504374" property="fb:app_id"><meta content="website" property="og:type"><meta content="https://readymag.com/p19780405/" property="og:url"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@readymag"><meta content="Project" property="og:site_name"><meta content="https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/Screenshot-a1b3065e-eee9-446d-bc71-b92cbbda8ec9_readyscr_1024.jpg" property="og:image"><meta content="Page 2 from Project by Orson Everaert" property="og:title"><meta content="Built with Readymag—a tool to design anything on the web." property="og:description"><script id="Cookiebot" src="./Project_files/uc.js" data-cbid="d4c2d48c-e2e7-4faf-94a1-c7397bef70a4" type="text/javascript" async=""></script><script>window.addEventListener('CookiebotOnDialogDisplay', function onDisplayPopup() {
-  var _window$Cookiebot;
-  if (!document.getElementById('CybotCookiebotDialog')) {
-    return;
-  }
-  const title = document.getElementById('CybotCookiebotDialogBodyContentTitle');
-  if (title) {
-    title.innerHTML = `<a href="https://readymag.com/readymag/terms-and-privacy/cookie_policy/" target="_blank">${title.innerText}</a>`;
-  }
-  const tabsContainer = document.getElementById('CybotCookiebotDialogDetailBodyContentCookieContainerTypes');
-  if (tabsContainer) {
-    const tabs = tabsContainer.children;
-    for (let i = 0; i < tabs.length; i++) {
-      const tabNodes = tabs[i].childNodes;
-      for (let j = 0; j < tabNodes.length; j++) {
-        const tabNode = tabNodes[j];
-        if (tabNode.nodeType === Node.TEXT_NODE) {
-          // Remove number of cookies in brackets
-          tabNode.textContent = (tabNode.textContent || '').replace(/\(\d+\)$/, '');
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ketevan Vekua - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+function animateTitle() {
+  const letters = document.querySelectorAll('.letter');
+  
+  letters.forEach((letter, index) => {
+    setTimeout(() => {
+      const randomX = Math.random() * 100 - 50;
+      const randomY = Math.random() * 100 - 50;
+      
+      letter.style.transform = `translate(${randomX}px, ${randomY}px)`;
+      letter.style.opacity = 0;
+    }, 100 * index);
+  });
+}
+
+const title = document.querySelector('.title');
+title.addEventListener('mouseover', animateTitle);
+});
+  </script>
+
+ <script>
+document.addEventListener("DOMContentLoaded", function() {
+function resetTitle() {
+  const letters = document.querySelectorAll('.letter');
+  
+  letters.forEach((letter) => {
+    letter.style.transform = 'translate(0, 0)';
+    letter.style.opacity = 1;
+  });
+}
+});
+  </script>
+
+ <script>
+document.addEventListener("DOMContentLoaded", function() {
+const title = document.querySelector('#title'); // Assuming you've given the title element an ID of 'title'
+function resetTitle() {
+  const letters = document.querySelectorAll('.letter');
+  
+  letters.forEach((letter) => {
+    letter.style.transform = 'translate(0, 0)';
+    letter.style.opacity = 1;
+  });
+}
+
+title.addEventListener('mouseout', resetTitle);
+
+});
+ </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scrolling for nav links
+    const navItems = document.querySelectorAll("nav ul li a");
+
+    navItems.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        const target = e.target.getAttribute("href");
+        const targetElement = document.querySelector(target);
+
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+          });
         }
-      }
-    }
-  }
-  const unclassifiedTab = document.getElementById('CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified');
-  if (unclassifiedTab) {
-    unclassifiedTab.style.display = 'none';
-  }
-  const acceptButton = document.getElementById('CybotCookiebotDialogBodyButtonAccept');
-  if ((_window$Cookiebot = window.Cookiebot) !== null && _window$Cookiebot !== void 0 && _window$Cookiebot.consented) {
-    if (acceptButton) {
-      acceptButton.innerText = 'Accept';
-    }
-    return;
-  } else {
-    setTimeout(function () {
-      const details = document.getElementById('CybotCookiebotDialogDetail');
-      const areDetailsVisible = details === null || details === void 0 ? void 0 : details.getBoundingClientRect().width;
-      if (acceptButton) {
-        acceptButton.innerText = areDetailsVisible ? 'Accept' : 'Accept All';
-      }
-    }, 200);
-  }
-  const dialog = document.getElementById('CybotCookiebotDialog');
-  const detailsButton = document.getElementById('CybotCookiebotDialogBodyButtonDetails');
-  detailsButton === null || detailsButton === void 0 ? void 0 : detailsButton.addEventListener('click', onDetailsButtonClick);
-  detailsButton === null || detailsButton === void 0 ? void 0 : detailsButton.addEventListener('click', toggleDialogClass);
-  function toggleDialogClass() {
-    dialog === null || dialog === void 0 ? void 0 : dialog.classList.toggle('details-view');
-  }
-  function onDetailsButtonClick() {
-    detailsButton === null || detailsButton === void 0 ? void 0 : detailsButton.removeEventListener('click', onDetailsButtonClick);
-    if (acceptButton) {
-      acceptButton.innerText = 'Accept';
-    }
-    const checkboxes = document.querySelectorAll('.CybotCookiebotDialogBodyLevelButton:not(.CybotCookiebotDialogBodyLevelButtonDisabled)');
-    for (let i = 0; i < checkboxes.length; i++) {
-      checkboxes[i].checked = false;
-    }
-  }
-}, false);</script><script type="application/json" id="__RM_PROPS__">{"publicPath":"https://d1id5eheivyv24.cloudfront.net/07eb5567/dist","project":{"opts":{"arrows":false,"menubutton":false,"sharebutton":false,"pagecounter":false,"endpage":false,"endpagetype":"join","viewertype":"horizontal","slidein":false,"scalewidth":3600,"projectinfo":false,"allowindex":false,"scalableviewer":true,"lqip":false,"hidden":true,"useCustomCursor":false,"controlsontop":false,"phoneVerticalAlign":"top","branding":false},"textStyles":{"global":[],"project":[{"_id":"64a11615ca9166006e256dea","label":"H1","tag":"h1","cssProperties":{"color":"22222264","fontFamily":"Roboto","fontStyle":"normal","textAlign":"left","fontSize":48,"fontWeight":700,"letterSpacing":0,"lineHeight":60,"paddingTop":0,"paddingRight":0,"paddingBottom":0,"paddingLeft":0},"name":"style-089b84d1-298c-4db9-bfcb-6b07adb474f8"},{"_id":"64a11615ca9166006e256deb","label":"H2","tag":"h2","cssProperties":{"color":"22222264","fontFamily":"Georgia","fontStyle":"normal","textAlign":"left","fontSize":24,"fontWeight":400,"letterSpacing":0,"lineHeight":30,"paddingTop":0,"paddingRight":0,"paddingBottom":0,"paddingLeft":0},"name":"style-26173ced-be08-4695-98af-066d938fe9cb"},{"_id":"64a11615ca9166006e256dec","label":"Text","tag":"p","cssProperties":{"color":"22222264","fontFamily":"Georgia","fontStyle":"normal","textAlign":"left","fontSize":18,"fontWeight":400,"letterSpacing":0,"lineHeight":23,"paddingTop":0,"paddingRight":0,"paddingBottom":0,"paddingLeft":0},"name":"style-9f7fc04a-94f7-4873-8f5f-e56aa2586b74"},{"_id":"64a11615ca9166006e256ded","label":"Caption","tag":"p","cssProperties":{"color":"22222232","fontFamily":"Georgia","fontStyle":"italic","textAlign":"left","fontSize":14,"lineHeight":18,"letterSpacing":0,"fontWeight":400,"paddingTop":0,"paddingRight":0,"paddingBottom":0,"paddingLeft":0},"name":"style-527278b6-919e-42f7-a461-fe94ff5c6ac9"}]},"listStyles":{"global":[],"project":[]},"linkStyles":{"global":[],"project":[{"style":{"link":{"textColor":"00000064","color":"00000064","type":"None","size":1,"padding":0},"hover":{"textColor":"97979764","color":"97979764","type":"None","size":1,"padding":0},"current":{"textColor":"0080FF64","color":"0080FF64","type":"None","size":1,"padding":0}},"_id":"64a11615b299cc0021118ddb","name":"link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4","label":"Default Link Style (Copy)"},{"style":{"link":{"textColor":"00000064","color":"00000064","type":"None","size":1,"padding":0},"hover":{"textColor":"97979764","color":"97979764","type":"None","size":1,"padding":0},"current":{"textColor":"0080FF64","color":"0080FF64","type":"None","size":1,"padding":0}},"_id":"64a11615b299cc0021118ddb","name":"link-1","label":"Default Link Style"}]},"likers":[],"pages":[{"type":"basic","height":1344,"hidden":false,"isPrivate":false,"sectionscroll":false,"used_autolayout":false,"arrows_color":"white","_id":"64a11601e1ae4b005061fdd0","mid":"64a11601e1ae4b005061fdcb","num":1,"num_id":19765735,"screenshot":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/Screenshot-4f6b68f9-a13c-4972-ac08-c7ad79fc91e8_readyscr.jpg","parentPage":null,"uri":"illustration","children":[],"pagePath":"illustration","pageNestedNum":"1","htmlUrl":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/HtmlSnippet-aaa0dabf-666b-40d5-bd6f-541a3a399210.html"},{"type":"basic","height":1344,"hidden":false,"isPrivate":false,"sectionscroll":false,"used_autolayout":false,"arrows_color":"white","_id":"64a42fadba32890059dde7b2","mid":"64a11601e1ae4b005061fdcb","num":2,"screenshot":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/Screenshot-a1b3065e-eee9-446d-bc71-b92cbbda8ec9_readyscr.jpg","parentPage":null,"num_id":19780405,"uri":"animation","children":[],"pagePath":"animation","pageNestedNum":"2","htmlUrl":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/HtmlSnippet-c9005467-7b98-4e8c-8202-42256603b26a.html"}],"isPrivatePages":false,"allow_iframe_embed":false,"pass_last_changed":"2023-06-30T09:34:11.919Z","desktopWidth":1024,"phoneWidth":320,"used_typekit_fonts":[{"id":"jcyh","variations":["i3","n4"],"subset":"all","css_name":"jcyh"}],"submitted_for_featured":0,"selected_for_featured":0,"version":2,"hasSummary":true,"hasWidgetsWithVerticalOnscrollAnimation":false,"hasTextWidgetsV3":true,"hasYoutube":false,"usedWidgetTypes":["background","text","picture"],"_id":"64a4399a344fea0b01831e2f","num_id":4319212,"__v":0,"categories":[],"changed":false,"coverPid":"64a11601e1ae4b005061fdd0","creation_date":"2023-07-02T06:15:29.877Z","edit_params":{"fonts":[{"provider":"system","css_name":"Arial","name":"Arial","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Courier New","name":"Courier New","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Georgia","name":"Georgia","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Times New Roman","name":"Times New Roman","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Trebuchet MS","name":"Trebuchet MS","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Verdana","name":"Verdana","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Tahoma","name":"Tahoma","variations":["n4","n7"]},{"provider":"typekit","css_name":"jcyh","name":"Adelle Sans","variations":["i3","n4"]}],"paragraph_styles":[],"link_styles":[]},"first_published":"2023-07-04T15:30:58.734Z","isArchived":false,"is_mag_use_minimal_viewport":true,"is_mag_use_page_order":true,"is_private":false,"is_published":true,"last_changed":"2023-07-04T15:30:58.232Z","last_published":"2023-07-04T15:24:10.111Z","master_share_pid":null,"pages_count":2,"published":"2023-07-04T15:24:10.111Z","setForRemoval":false,"showAsNew":false,"tags":[],"typekit_url":"https://use.typekit.net/ik/Ysa5U-rYmTmOSxg4EuGzKXcMPElMLOdCrxcc7Eiu5O6feTvgf4aebgJVwQMuFD9hFmvXwDIowRIkecFlpPokZABqpAuyZkoRdhXCScmyZY8ljAS0jhNlOY48jAsodAB1OcUzjhBCOYiaikolpPokZABqpAuyZkoRdhXCiaiaO148jAsodAB1OcFzdPUaiaS0ScmyZY8ljAS0deNRjA3KgeTRpA67f6RayMIbMg6FJMI7f6RtyMIbMg6IJMebMdOhqH9e.js","updated":"2023-07-04T15:30:58.734Z","uri":"4319212","used_custom_fonts":[],"used_google_fonts":[],"used_typetoday_fonts":[],"used_webtype_fonts":[],"user":{"_id":"6491b937fb9bf80043059211","name":"Orson Everaert","num_id":145854748,"uri":"u145854748","mags_count":1,"permissions":{"can_use_analytics":false,"must_show_branding":true,"can_use_gtm":false,"white_label":false,"can_use_custom_analytics":false,"can_use_beta_testing":false,"can_use_e_commerce":false,"can_use_forms_file_upload":false,"forms_file_upload_limit":0,"forms_file_upload_count":1,"allow_index":false,"can_use_iframe":false}},"widgetAddCounter":52,"prevPubVersionId":"64a43abd0c2cd500149e3f94","cover":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/Screenshot-4f6b68f9-a13c-4972-ac08-c7ad79fc91e8_readyscr.jpg","must_show_branding":true},"isDomainViewer":false,"domainForUser":false,"homepageRewrite":false,"isDownloadedSource":false,"exportBasePath":""}</script><script>
-          var RM = window.RM = window.RM || {};
-          try { if (document.domain) document.domain = document.domain; } catch (e) { }
-          window.ServerData = {"mags":{"mag":{"opts":{"arrows":false,"menubutton":false,"sharebutton":false,"pagecounter":false,"endpage":false,"endpagetype":"join","viewertype":"horizontal","slidein":false,"scalewidth":3600,"projectinfo":false,"allowindex":false,"scalableviewer":true,"lqip":false,"hidden":true,"useCustomCursor":false,"controlsontop":false,"phoneVerticalAlign":"top","branding":false},"textStyles":{"global":[],"project":[{"_id":"64a11615ca9166006e256dea","label":"H1","tag":"h1","cssProperties":{"color":"22222264","fontFamily":"Roboto","fontStyle":"normal","textAlign":"left","fontSize":48,"fontWeight":700,"letterSpacing":0,"lineHeight":60,"paddingTop":0,"paddingRight":0,"paddingBottom":0,"paddingLeft":0},"name":"style-089b84d1-298c-4db9-bfcb-6b07adb474f8"},{"_id":"64a11615ca9166006e256deb","label":"H2","tag":"h2","cssProperties":{"color":"22222264","fontFamily":"Georgia","fontStyle":"normal","textAlign":"left","fontSize":24,"fontWeight":400,"letterSpacing":0,"lineHeight":30,"paddingTop":0,"paddingRight":0,"paddingBottom":0,"paddingLeft":0},"name":"style-26173ced-be08-4695-98af-066d938fe9cb"},{"_id":"64a11615ca9166006e256dec","label":"Text","tag":"p","cssProperties":{"color":"22222264","fontFamily":"Georgia","fontStyle":"normal","textAlign":"left","fontSize":18,"fontWeight":400,"letterSpacing":0,"lineHeight":23,"paddingTop":0,"paddingRight":0,"paddingBottom":0,"paddingLeft":0},"name":"style-9f7fc04a-94f7-4873-8f5f-e56aa2586b74"},{"_id":"64a11615ca9166006e256ded","label":"Caption","tag":"p","cssProperties":{"color":"22222232","fontFamily":"Georgia","fontStyle":"italic","textAlign":"left","fontSize":14,"lineHeight":18,"letterSpacing":0,"fontWeight":400,"paddingTop":0,"paddingRight":0,"paddingBottom":0,"paddingLeft":0},"name":"style-527278b6-919e-42f7-a461-fe94ff5c6ac9"}]},"listStyles":{"global":[],"project":[]},"linkStyles":{"global":[],"project":[{"style":{"link":{"textColor":"00000064","color":"00000064","type":"None","size":1,"padding":0},"hover":{"textColor":"97979764","color":"97979764","type":"None","size":1,"padding":0},"current":{"textColor":"0080FF64","color":"0080FF64","type":"None","size":1,"padding":0}},"_id":"64a11615b299cc0021118ddb","name":"link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4","label":"Default Link Style (Copy)"},{"style":{"link":{"textColor":"00000064","color":"00000064","type":"None","size":1,"padding":0},"hover":{"textColor":"97979764","color":"97979764","type":"None","size":1,"padding":0},"current":{"textColor":"0080FF64","color":"0080FF64","type":"None","size":1,"padding":0}},"_id":"64a11615b299cc0021118ddb","name":"link-1","label":"Default Link Style"}]},"likers":[],"pages":[{"wids":["64a11601e1ae4b005061fdd6","64a11cc9b34d14001ce763c7","64a11e4d0aa87500642b50f9","64a42c92343d8d003fa2dfd9","64a42cef7b297a2f087339b1","64a42d495f0d01001af9a1b1","64a42d5a13425200146c6dd9","64a430cf462c330061a461ee"],"order":{"default":{"aboveAll":[],"frontFixed":[],"normal":["64a430cf462c330061a461ee","64a42d5a13425200146c6dd9","64a42d495f0d01001af9a1b1","64a42cef7b297a2f087339b1","64a42c92343d8d003fa2dfd9","64a11c363d3b2000359d796e","64a11be70aa87500642b4725","64a11bad116958004b1c7b15","64a11e4d0aa87500642b50f9","64a11cc9b34d14001ce763c7","64a11d3148a1560014c8d843"],"backFixed":[]},"phone_portrait":{"aboveAll":[],"frontFixed":[],"normal":[],"backFixed":[]},"tablet_portrait":{"aboveAll":[],"frontFixed":[],"normal":[],"backFixed":[]}},"type":"basic","height":1344,"hidden":false,"isPrivate":false,"sectionscroll":false,"used_autolayout":false,"arrows_color":"white","_id":"64a11601e1ae4b005061fdd0","mid":"64a11601e1ae4b005061fdcb","num":1,"num_id":19765735,"screenshot":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/Screenshot-4f6b68f9-a13c-4972-ac08-c7ad79fc91e8_readyscr.jpg","parentPage":null,"uri":"illustration","children":[],"pagePath":"illustration","pageNestedNum":"1","htmlUrl":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/HtmlSnippet-aaa0dabf-666b-40d5-bd6f-541a3a399210.html"},{"wids":["64a42fadba32890059dde7b5","64a42fadba32890059dde7b9","64a42fadba32890059dde7bb","64a42fadba32890059dde7bc","64a42fadba32890059dde7bf"],"order":{"default":{"aboveAll":[],"frontFixed":[],"normal":["64a42fadba32890059dde7bf","64a42fadba32890059dde7bc","64a42fadba32890059dde7b8","64a42fadba32890059dde7b7","64a42fadba32890059dde7b6","64a42fadba32890059dde7bb","64a42fadba32890059dde7b9","64a42fadba32890059dde7ba"],"backFixed":[]},"phone_portrait":{"aboveAll":[],"frontFixed":[],"normal":[],"backFixed":[]},"tablet_portrait":{"aboveAll":[],"frontFixed":[],"normal":[],"backFixed":[]}},"type":"basic","height":1344,"hidden":false,"isPrivate":false,"sectionscroll":false,"used_autolayout":false,"arrows_color":"white","_id":"64a42fadba32890059dde7b2","mid":"64a11601e1ae4b005061fdcb","num":2,"screenshot":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/Screenshot-a1b3065e-eee9-446d-bc71-b92cbbda8ec9_readyscr.jpg","parentPage":null,"num_id":19780405,"uri":"animation","children":[],"pagePath":"animation","pageNestedNum":"2","htmlUrl":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/HtmlSnippet-c9005467-7b98-4e8c-8202-42256603b26a.html"}],"isPrivatePages":false,"allow_iframe_embed":false,"pass_last_changed":"2023-06-30T09:34:11.919Z","desktopWidth":1024,"phoneWidth":320,"used_typekit_fonts":[{"id":"jcyh","variations":["i3","n4"],"subset":"all","css_name":"jcyh"}],"submitted_for_featured":0,"selected_for_featured":0,"version":2,"hasSummary":true,"globalWidgets":[],"aboveAllWidgets":[],"hasWidgetsWithVerticalOnscrollAnimation":false,"hasTextWidgetsV3":true,"hasYoutube":false,"usedWidgetTypes":["background","text","picture"],"_id":"64a4399a344fea0b01831e2f","num_id":4319212,"__v":0,"categories":[],"changed":false,"ci_body_bottom":"","ci_body_top":"","ci_css":"","ci_head":"","coverPid":"64a11601e1ae4b005061fdd0","creation_date":"2023-07-02T06:15:29.877Z","edit_params":{"fonts":[{"provider":"system","css_name":"Arial","name":"Arial","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Courier New","name":"Courier New","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Georgia","name":"Georgia","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Times New Roman","name":"Times New Roman","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Trebuchet MS","name":"Trebuchet MS","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Verdana","name":"Verdana","variations":["n4","i4","n7","i7"]},{"provider":"system","css_name":"Tahoma","name":"Tahoma","variations":["n4","n7"]},{"provider":"typekit","css_name":"jcyh","name":"Adelle Sans","variations":["i3","n4"]}],"paragraph_styles":[],"link_styles":[]},"first_published":"2023-07-04T15:30:58.734Z","isArchived":false,"is_mag_use_minimal_viewport":true,"is_mag_use_page_order":true,"is_private":false,"is_published":true,"last_changed":"2023-07-04T15:30:58.232Z","last_published":"2023-07-04T15:24:10.111Z","master_share_pid":null,"pages_count":2,"published":"2023-07-04T15:24:10.111Z","setForRemoval":false,"showAsNew":false,"tags":[],"typekit_url":"https://use.typekit.net/ik/Ysa5U-rYmTmOSxg4EuGzKXcMPElMLOdCrxcc7Eiu5O6feTvgf4aebgJVwQMuFD9hFmvXwDIowRIkecFlpPokZABqpAuyZkoRdhXCScmyZY8ljAS0jhNlOY48jAsodAB1OcUzjhBCOYiaikolpPokZABqpAuyZkoRdhXCiaiaO148jAsodAB1OcFzdPUaiaS0ScmyZY8ljAS0deNRjA3KgeTRpA67f6RayMIbMg6FJMI7f6RtyMIbMg6IJMebMdOhqH9e.js","updated":"2023-07-04T15:30:58.734Z","uri":"4319212","used_custom_fonts":[],"used_google_fonts":[],"used_typetoday_fonts":[],"used_webtype_fonts":[],"user":{"_id":"6491b937fb9bf80043059211","name":"Orson Everaert","num_id":145854748,"uri":"u145854748","mags_count":1,"permissions":{"can_use_analytics":false,"must_show_branding":true,"can_use_gtm":false,"white_label":false,"can_use_custom_analytics":false,"can_use_beta_testing":false,"can_use_e_commerce":false,"can_use_forms_file_upload":false,"forms_file_upload_limit":0,"forms_file_upload_count":1,"allow_index":false,"can_use_iframe":false}},"widgetAddCounter":52,"prevPubVersionId":"64a43abd0c2cd500149e3f94","cover":"https://d3n32ilufxuvd1.cloudfront.net/6491b937fb9bf80043059211/4319212/Screenshot-4f6b68f9-a13c-4972-ac08-c7ad79fc91e8_readyscr.jpg","must_show_branding":true}},"userPermissions":{"can_use_analytics":false,"must_show_branding":true,"can_use_gtm":false,"white_label":false,"can_use_custom_analytics":false,"can_use_beta_testing":false,"can_use_e_commerce":false,"can_use_forms_file_upload":false,"forms_file_upload_limit":0,"forms_file_upload_count":1,"allow_index":false,"can_use_iframe":false},"stripe_live":true,"fonts":{"webtype":"/api/fonts/webtype/css?domain=readymag.com\u0026md5=tIroNivyyyJPSx_NomTzlw","typetoday":"/api/fonts/typetoday/css?domain=readymag.com\u0026md5=tY8jLN_3kwpxC9RAzXG9zQ","google":[]},"featureFlags":{"analytics.v2":false,"analytics.v2-facebook":false,"viewer.validatePath":true,"viewer.transformNotZoom":false,"viewer.ga4Events":false,"constructor.workspacePerViewport":false,"widget.safariHardwareAcceleration":false,"constructor.arrange":true,"constructor.preciseGuides":true,"viewer.monitorForLoopBlocks":false,"constructor.smartTips":false,"viewer.useAmplitudeMarketing":true,"constructor.viewportMinimal":false,"constructor.groupEditing":false,"experiment.increasePersonalPlanPrice":{"name":"disabled","enabled":false},"widget.anomalyMonitoring":false,"experiment.bannerVsWidget":{"name":"disabled","enabled":false},"constructor.indexPreserve":true,"widget.viewportProxy":true,"experiment.increaseYearlyDiscounts":{"name":"disabled","enabled":false},"viewer.resizeFixedContainer":false,"viewer.nextCaching":true,"viewer.next":false,"constructor.splitView":false,"viewer.nextSwitcher":false},"isCountryInEU":true,"config":{"isProd":true,"isProdBuild":true,"stripe_live":true,"STRIPE_TEST_PUBLIC_KEY":"pk_test_jUUcZjJTPacN2s7Bs6j2F0Va","STRIPE_LIVE_PUBLIC_KEY":"pk_live_4WmkUqmpy589CuOX7zOhAnU3","fontslist_short":"//d1id5eheivyv24.cloudfront.net/fonts/fontslist_short.json","fontslist":"//d1id5eheivyv24.cloudfront.net/fonts/fontslist.json","fontsimgs":"//d1id5eheivyv24.cloudfront.net/fonts/","readymag_host":"https://readymag.com","readymag_auth_host":"https://my.readymag.com","readymag_embed_host":"https://embed.readymag.com","readymag_lambda_host":"https://d2kq0urxkarztv.cloudfront.net","readymag_videos_cdn":"https://videos-cdn.readymag.com","favicon":{"default":"/dist/img/favicons/favicon.ico","touch":"/dist/img/favicons/apple-touch-icon-precomposed.png","touch_144":"/dist/img/favicons/apple-touch-icon-144x144-precomposed.png","touch_114":"/dist/img/favicons/apple-touch-icon-114x114-precomposed.png","touch_72":"/dist/img/favicons/apple-touch-icon-72x72-precomposed.png"},"GA_ID":"UA-110571495-2","GA4_ID":"G-4MHCHDVPXV","GOOGLE_ADS_ID":"AW-963910923","GOOGLE_CONVERSION_LABEL_REGISTRATION":"iGBtCP76u9QDEIu60MsD","GTM_ID":"GTM-NPR9HT7","GOOGLE_OPTIMIZE_ID":"GTM-PTJ6HZR","linkedInPartnerId":"4866241","pinterestId":"2614453656440","zendeskApiKey":"c8bb74e6-f6ca-46cf-b377-bf7e508bc9f2","hotjar":{"id":2740585,"version":6},"amplitudeApiKey":"bef553e84dfb01a0da595c3a636436f6","productVisitZones":["profile","public","editor"],"FACEBOOK_APP_ID":"955357184504374","FACEBOOK_API_VERSION":"2.3","FACEBOOK_PIXEL_ID":"166690417336028","SOUNDCLOUD_API":"73d56f812402c7229878245f61a366fb","TYPEKIT_ID":"rm","TYPEKIT_TOKEN":"3bb2a6e53c9684ffdc9a99f4125b2a62feb024cf1a83fd2619b27014091e9d9dd9dec1d5d94c24ace6c645bbbcd4a16329d802df6e31a707e226d4e5fc49b837d131bc940117891228784d5dee8538bed9544b581bdaf57e0dc7ab9b5f7e316bc8efa22d7ff8caa28133e3986f4b7afe9c354ffff7eec9b0d8e5c160eb5e8936da76e0b37a964407ae231f6b6432b0a7f3ee7ae5dc05fe30cd7e1a05e920af9e1c728a4bb01d4d1ba694183e778c9c90f9f9bc91cbc3528ac7d6395973ec6d559ccd254df729ec3ea23a13bfb3f6c5d433ba9875c268acf548fea9b1817f39a9eee90bdb7a6f9644c98882fd8472ebced24f76010aee15c68f7c00125c7f625a1f7cc07cee9a66637ca636014f736631fec4c8793b7d0cd941f236a2ea2d66956123f0b404249dbfc797e70508e4c8511e1238be74722e5386b8475f6a0ae0ca4c39288206c38e57","SUPPORT_MAIL":"support@readymag.com","HELLO_MAIL":"hello@readymag.com","EDU_MAIL":"edu@readymag.com","NOREPLY_MAIL":"no-reply@readymag.com","FORMS_ACCEPTED_MIMES":["image/*","video/*","audio/*","application/pdf","application/msword","application/vnd.openxmlformats-officedocument.wordprocessingml.document","application/vnd.oasis.opendocument.text","application/vnd.oasis.opendocument.presentation","application/vnd.oasis.opendocument.spreadsheet","application/vnd.ms-powerpoint","application/vnd.openxmlformats-officedocument.presentationml.presentation","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","application/vnd.ms-excel","application/x-iwork-keynote-sffkey","application/x-iwork-pages-sffpages","application/x-iwork-numbers-sffnumbers"],"RECAPTCHA_SITEKEY":"6Ld0r_cZAAAAAFKkweesCokUIuWgfYUIORFV0Xfj","RELEASE":"07eb5567","RM_PROJECTS_OWNERS_IDS":["50dad5df6b52d70000000006","5f7db7cfde8c140015a9fb60","5a1d3f6e8d0f9660e0f879e9","5d76403a8b7be57e9ef21446","6065967818970d00bed45f17","563683ddbcf58fe246eaba90","521a57087f464d1a6b0000c8"],"featureFlags":{"analytics.v2":false,"analytics.v2-facebook":false,"viewer.validatePath":true,"viewer.transformNotZoom":false,"viewer.ga4Events":false,"constructor.workspacePerViewport":false,"widget.safariHardwareAcceleration":false,"constructor.arrange":true,"constructor.preciseGuides":true,"viewer.monitorForLoopBlocks":false,"constructor.smartTips":false,"viewer.useAmplitudeMarketing":true,"constructor.viewportMinimal":false,"constructor.groupEditing":false,"experiment.increasePersonalPlanPrice":{"name":"disabled","enabled":false},"widget.anomalyMonitoring":false,"experiment.bannerVsWidget":{"name":"disabled","enabled":false},"constructor.indexPreserve":true,"widget.viewportProxy":true,"experiment.increaseYearlyDiscounts":{"name":"disabled","enabled":false},"viewer.resizeFixedContainer":false,"viewer.nextCaching":true,"viewer.next":false,"constructor.splitView":false,"viewer.nextSwitcher":false}}};
-        </script><script>
-        window.viewerConfig = {};
+      });
+    });
 
-        viewerConfig.readymagTracker = false;
-        viewerConfig.isProjectOwnedByRM = false;
-        viewerConfig.userTracker = false;
+    // Handle hamburger menu click
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const navMenu = document.querySelector("nav ul");
 
-        
+    hamburgerMenu.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
 
-        viewerConfig.isDomainViewer = false;
-        viewerConfig.customDomainProfile = window.ServerData.mags.domainForUser;
-        viewerConfig.isDownloadedSource = false;
-      </script><script>
-  if (window.RM) {
-    window.RM.customAnalyticsHandlers = {
-      track: [],
-      event: []
-    };
-  }
-</script><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/50.2b1747bb7110db682ffc.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/51.b9432653ac9b23f3854c.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/52.10a8672a56269734650b.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/53.e15748bf68e32ea27577.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/54.5faf9ac265cf111686dd.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/55.403bae6015ddcc9346ab.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/56.0ebded683608dcac5580.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/57.7507c1a321d1188ef53d.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/34.2a52d39316b35bc2993a.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/58.053bbcf4238715e54723.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/32.c4c5e9862f5914749371.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/27.e2859089ff159a5a2ba6.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/30.439d84a176a07794d9a5.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/38.f26fc96fc37474e570b0.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/37.e5c58aa2b967d154b4be.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/39.a56ce7874be392b62c12.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/40.edc63afcf4bf4d9725db.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/41.790d5ba87685f94eec25.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/42.3ac78ba4abed5326e19d.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/21.6d80cc2282995476e530.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/44.787093836b9eb4b8961c.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/49.f964f60d441e625e9db0.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/31.02c20405f517254add5a.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/36.af11fc8c187a0c317935.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/22.eb4c6a624e1cd533dfbb.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/46.494a07ef97ccc4197cb8.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/47.199f34bc35abb3f7d51a.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/35.75c6d648cd727b5c449c.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/24.ddd8cdc66afe5a33f97f.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/23.083ef1f1a1b280297cd9.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/104.6869944ab44609ee9314.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/107.6c6addbe278fba316be1.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/59.c1f952c8c2480ee0868d.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/18.52a081450388ab9f23c0.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/26.3458d135bbfd4adbe559.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/28.666ab3148ad96ccb3476.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/48.000289753f59cf49ac53.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/25.e6db3416cd4f0d93c4ef.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/45.6484e3ddce0674ab7e32.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/33.977e27eb92b5ffb605d6.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/29.20035c76f45a9990c902.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/19.e3d5ee3ae93051aea5dd.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/20.7d7232a07f9054e63ce6.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/43.0ca2d8c63d6105c4118b.js" rel="prefetch" class=""><link href="https://d1id5eheivyv24.cloudfront.net/07eb5567/dist/24.ddd8cdc66afe5a33f97f.css" rel="prefetch" class=""><link href="./Project_files/bundle.cc8492fdb83826542e4f.css" rel="stylesheet" class=""><title>Project</title><style data-emotion="css-global 18cw7ht" data-s="" class="">#CybotCookiebotDialog{box-shadow:none!important;padding:19px 24px!important;width:auto!important;min-height:186px!important;background-color:#f4f4f4!important;left:18px!important;right:18px!important;margin-top:50px!important;border-radius:8px!important;top:initial!important;bottom:16px!important;}#CybotCookiebotDialog.details-view #CybotCookiebotDialogBody{margin-top:0!important;}#CybotCookiebotDialog.details-view #CybotCookiebotDialogDetail{display:block;}#CybotCookiebotDialogBody{display:-webkit-box!important;display:-webkit-flex!important;display:-ms-flexbox!important;display:flex!important;-webkit-align-items:baseline;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;max-width:none!important;padding:0!important;margin-right:0!important;margin-left:0!important;margin-top:82px!important;}#CybotCookiebotDialogPoweredbyLink{display:none!important;}#CybotCookiebotDialog>div:not([id]){visibility:hidden!important;}#CybotCookiebotDialogBodyContent{display:inline-block!important;padding:0!important;min-height:auto!important;font-size:9.5pt;font-weight:400;line-height:155%;}#CybotCookiebotDialogBodyContentTitle{font-family:sans-serif!important;font-size:16px!important;font-weight:400!important;line-height:initial!important;margin:0!important;padding:0!important;}#CybotCookiebotDialogBodyContentTitle a{-webkit-text-decoration:none!important;text-decoration:none!important;}#CybotCookiebotDialogBodyContentText{display:none!important;}#CybotCookiebotDialogBodyButtons{display:inline-block!important;margin:0!important;display:inline-block!important;float:right!important;-webkit-transform:scaleX(-1);-moz-transform:scaleX(-1);-ms-transform:scaleX(-1);transform:scaleX(-1);}#CybotCookiebotDialogBodyButtonAccept{background-color:transparent!important;color:#0080ff!important;border:none!important;font-family:sans-serif!important;font-size:16px!important;font-weight:400!important;line-height:initial!important;min-width:auto!important;margin:0!important;padding:0!important;-webkit-transform:scaleX(-1)!important;-moz-transform:scaleX(-1)!important;-ms-transform:scaleX(-1)!important;transform:scaleX(-1)!important;}#CybotCookiebotDialogBodyButtonAccept:hover{color:black!important;}#CybotCookiebotDialogBodyButtonDetails{background-image:none!important;font-family:sans-serif!important;font-size:16px!important;font-weight:400!important;line-height:initial!important;color:#999!important;margin:0!important;padding:0!important;padding-right:10px!important;-webkit-transform:scaleX(-1)!important;-moz-transform:scaleX(-1)!important;-ms-transform:scaleX(-1)!important;transform:scaleX(-1)!important;}#CybotCookiebotDialogBodyButtonAccept:focus,#CybotCookiebotDialogBodyButtonDetails{outline:none!important;}#CybotCookiebotDialogBodyButtonDetails:hover{-webkit-text-decoration:none!important;text-decoration:none!important;}#CybotCookiebotDialogDetail{padding-top:8px!important;background-color:#f4f4f4!important;}#CybotCookiebotDialogDetailBody{max-width:none!important;}#CybotCookiebotDialogDetailBodyContent{height:140px!important;background-color:unset!important;border:none!important;}#CybotCookiebotDialogDetailBodyContentTextOverview{background-color:#f4f4f4!important;}#CybotCookiebotDialogDetailBodyContentTabs{display:none!important;}.CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer{display:none!important;}#CybotCookiebotDialogDetailBodyContentCookieContainer .CybotCookiebotDialogDetailBodyContentCookieContainerTypes,#CybotCookiebotDialogDetailBodyContentCookieContainer .CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected,#CybotCookiebotDialogDetailBodyContentCookieContainer .CybotCookiebotDialogDetailBodyContentIABv2TabSelected{background-color:#f4f4f4!important;color:#999!important;border:none!important;padding-left:0!important;}#CybotCookiebotDialogDetailBodyContentCookieContainer .CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected{color:#303030!important;}a.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:focus,a.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:hover,a.CybotCookiebotDialogDetailBodyContentTabsItemSelected:focus,a.CybotCookiebotDialogDetailBodyContentTabsItemSelected:hover{background-color:#f4f4f4!important;}#CybotCookiebotDialogDetailBodyContentCookieContainerTypeDetails{height:auto!important;max-height:auto!important;max-width:400px!important;padding-left:60px!important;padding-right:0!important;}@media (max-width: 768px){#CybotCookiebotDialogDetailBodyContentCookieContainerTypeDetails{padding-left:0px!important;width:50%!important;}}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes{background-color:#f4f4f4!important;padding-top:5px!important;-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important;}@media (max-width: 768px){#CybotCookiebotDialogDetailBodyContentCookieContainerTypes{width:50%!important;}}#CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected{background-color:#f4f4f4!important;padding-top:5px!important;}#CybotCookiebotDialogDetailBodyContentCookieContainer #CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified{padding-left:24px!important;}input[type='checkbox'].CybotCookiebotDialogBodyLevelButton{margin-left:0!important;}input[type='checkbox'].CybotCookiebotDialogBodyLevelButton+label{margin-top:-4px!important;-webkit-background-size:20px 20px!important;background-size:20px 20px!important;-webkit-background-position:center!important;background-position:center!important;min-width:20px!important;min-height:20px!important;margin-right:4px!important;padding:0!important;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAKKADAAQAAAABAAAAKAAAAABZLkSWAAADqklEQVRYCc2ZPUgcQRiGb/fwJBCrQCCnkCKkssxPIVxh5LwqJpoiYATB1p8mdVIkdRoxrSCokEJFU+lhhAgWSSytQoqArhCwMhA9OS/vs84e3nq/yd3uLqwzNzPfvM9+szM732jF/vHa3Ny8k8/nnxQKhXu6k+omaVkWaUy/HSWOfnPvxuPx1b6+vh/UNXpZjRisr6/flPiERAeV3lC6Jvtt27YPgBGI09bWZp2cnNwC+vz8vFP1KeUHVH+kdEXpTCaT+VWvbl2AW1tb13O53EsJTElgXp0v9vf3f1G+UI+Q7KyNjY2Hajus/IjsphOJxLve3t7ftexrAmaz2SEN5Xt1lJV3XmmoftbqtFq9Xo3bZ2dnb9UmLY+Pp9Pp5WrtKwKap34t4zE98TN57Fu1jhqtk0fvS2NJdrPq+02l0SgLuLOzc+34+HhOxrz0Q428M42A8k6rPR50Ojo6Rnt6ev747W1/AZ4zcPmurq5HrYJDl77RUDaPJtp+niuAcj3DmpThaHd3d85v0OzfaKCFptEukSgBZEKodkz3UBBwHonRcrUNg1cVK7qUpeT09PS71rTHzZ4QRbUaGSaO1s6P7e3td70lqOhB1jnZZ8OCg91oZw2L+zguoPlCTLHOuaUh/oFBk2XKzPCY58FJrUPz/7sIN+O5YIBFkBP05wE+VcFCMwSa1MeiIAfpy2JXok/PttakThXW9W1tEkTFblgPNcQHGu6UzZZJYGtRgXO9JkfBBJstWvZznys+TngV27ABmGQfFx5HeWX2mLAxSdgJRw7QMCVtZSLpQUYVNoa4oNlS/OSVd3jwpTDBxhAfEkMEj1Bd0TAdAugI1I3GqpsEW2uYHN5Bx0RfwRLUUIMJNgB31TZVo30Y1SnYbM2WVblzQHdkJgosMMFmE/GL9EibReLWSFywwAQbk4SjihUlw5Ggu4AgwIfpYrsl2hkVjBBUhw0JAywwFQEJ/1QwbSL+UBlhgMULd90hhoizEiVpApewCI122rC4GEVAoijNmnG5d8mLB4IENXHREgxeRId+EZAf5iBnVtnlvb29BGVBXEaLI5BZ/2HSlbVPHuSo7IMac/TR8tMF4Pb39+ekF1fY+VzvX0nYUeJBvEUDDnIwkOGnVg43faOBFpp+OJeHP+Uu48loHr9dBo7sAeZlSP8RsLy7oHXqa7khuWzn5RkNDecDtX+hfHOPgD0RUvM+TipLoF/2EJ12CheTqg/uEB1R/0XAT9wqkJb+G+IvqgYWv3ClNIoAAAAASUVORK5CYII=')!important;}input[type='checkbox'].CybotCookiebotDialogBodyLevelButton:checked+label{background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAKKADAAQAAAABAAAAKAAAAABZLkSWAAAEl0lEQVRYCc2ZT0gUURzHd2ZzpchLQeBqdIjCP3so+nMQ9mCyesrSiMAMw2P+6dC5goJuQYRGJ8FQo0RFu6ibLSQIVnvLPxAdAl0j8GSQrqzb9zu9N87O7s7OtrOrA7Pv7+99P/N7896891Zx/ec1MzNzMhaLXYnH4+dwe9GMV1EUhi6kIwgiSPMOu93u8bq6uu8sy/ZSsjGYmpo6BvFOiDYhPIpwAvazqqquEgYgkaKiImVzc7OU0Ds7O2Uo9yPeiPJ1hGMIexoaGn7Z1bUFGAqFDkej0XsQ6IbAABofqq+v/4R43I4Q7JTp6emLqNuCeCvsnns8nqe1tbW/M9lnBAwGg83oyl40FIR37qOrfmRq1Kocr8aJ7e3tx6gTgMc7AoHAqFX9tIDiqR/AuB1PfA0e+2LVULZl8Oh5aIzArg9tP0rXGykB5+bmDm5sbPTDmC99czbvTDagfKdRnx6MlJSUtNXU1Pwx26vmDHpOwMXKy8sv5QuOumybGojGqEltM08SIFzPbvXCsK26ujpqNnA6TQ1qUVNoJ0gkAHJAoLQdd3Mh4CSJ0NK0BYMscuku5VSytbX1DXPaZacHhK6WIcKBg7nzXXFx8Sk5Beke5DwH++BewZFdaAcFi/Y4GqD4QnRzntNy8/xTWVlZivsuuvaMWYoMGCzdYoS7pAe7MA8N5DoJm8VSpauqqs4i/ysgnqE7530+33FjPTKQBeWdzJeAV5ExaKyYjzjhoPMe9xG2j9Aj4ya9IUA2MU/hqgSfnlnMSWXItPVtNTVmK2mG08QVpXdpaUnzlLERQCvo4lV0t1/lkglgE3sA93JxcbHLCCbjZCET2VTQcj33URY6HabxHOHuZHDKLNkI6OU6zmkwtpcDnItrTLIdQDtcCacFxHTgQx0/DMYWFhZ+UtjOlQsc2xdMXhWRtB7kfIW683iSF3gfwhUVFacLAUcN9irZ2MVxjBb9k2cEoItxHxJ5XHqFMkHm6jmpTyaycR5c4x5CFhjD5eXlMJ6CS3x5WUI6BUcxwbRGwAg9JQnMIWb624B8bchPCekkHLUEU4TvYETsvgwMu9Hh4eEYIG9ZQToNR3UykY2AYaT9u0jJMStIwF3H0+qfL1qjTTvzXLJQYo6fbCpGyzgEGnGnHCjSJh0knvQtbLVvK+s6AUcWMpFN5Y4fja5jsch9q+WVBlK3cQKOjZGFTGTTVjOgHUN+i65kEUkH6RSckOYGn0z/lltovAcZrdxUW7DpRRISX5ceZK7ifmLj26rbW0XIQBYyJdTD8ubh5OTkq4TMPUiQgSxSWutiJnhWgiDAjYssLHQotAOCRZPXAbmLwqjpgHtH5H6gkIDUpDYZ5I6O+jogE+Igpw/RUaxcPMwrxCW0eATSZz5MSpr78BQ8KnuDyjz6yPvpAuFWVlb6oefGtvMGBkfCtiPBg/QWK/AghwYw/JDP7mbb1KAWNc1wGg9/Ul3Ck/vz+M0IvG8PMI2Q5iNgeHcQ29TPqbrEaCfj7A105wXUv4m4s0fAUoSheB+5VeRGP+UhOuthe8CVeOEO0Slqvrjh574VIHn9G+Iv+eUHDY1/x5cAAAAASUVORK5CYII=')!important;}input[type='checkbox'].CybotCookiebotDialogBodyLevelButton.CybotCookiebotDialogBodyLevelButtonDisabled+label{background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAKKADAAQAAAABAAAAKAAAAABZLkSWAAAEk0lEQVRYCc2ZS2hUVxyH596YCYrZtFBwjLgQu0kXlloXgVnEMEk2viKlYC2Ky6rpwrUKCu4EkSiuAooPFDSomySTGEggYNvsmpV0ISRjKbhKIS8m4/e7njPcud47D+fOxAN3zrnn9fvu/7zPOInPdJOTk3vy+fyRQqHwA0+KalKO48hP8J7Dy/GuZ66lpeV5T0/PP0qr1Tm1FBgbG/sG8XOIHsP/Gv8F5Wdc110UDCC51tZWZ2VlZYegNzY2dpKeJnyY9Pf4I/hDfX19/1WrWxXg1NTU9rW1tQsIDCJwn8of9vb2/kG4UI0Q5Zzx8fED5D1B+CTlbiaTyevd3d3/VypfETCbzQ7QlLeoKIt1LtJUbytVWi6drrF7fX39KnkyWPxsJpN5Vi5/JKD56ksUPsMXH8dif5WrqNY0LLofjaeUG6buK1GtEQo4Ozu7dWlp6S6F1ekHaukztYCqT5NfFsy1t7ef6urqWg6Wd4MRspyBy3d0dBxsFJx0Vbc0COalKe0gzyeAmF7NmqLgqc7OzrVggbjfpSEtaRrtEokSQA0IUs/wDDQDzpIYLU/bMNikRNGkmkpWV1ffMKcdintAFNUqBDRwmDtftrW17bVTUNGCmucon90sOLEb7axh8T7HAzQrxKDmOS+2wT/T09M7sNbvPPuCUmJgsAyaEZ6wFjzPPHS/3kk4KBb2Th/7fnl5+W+a8gbPa0B2+fOJQSxAnlO8BTxKxAN/xkaEBQfUBFpfmfqTvrBf8iGQxxThaFfC0jPDnLSTyKrWVn9N1YZD4FT0Vn9/v2cpfz1AO1h2keZOu9oyAfZiE+DuYJTzfjAbFouYxOZCq/3ctE2M24+wnOB+q2CUGbEJMKV9XNxgqq8OuIT2mGLbQj3aCUcC0he+I0+a/dsIk+e/Eq7G1QOn+g1TyiUQaUHNV3zFa57bTJ5zExMT3zYDThpqVbGpiQuMluKS5wdgvtJ2a5viyJai005VgqzXclZfTGLTPPhOZwib4PfpyHN8hbb4nqsEGRecxAzTOwHmJOwRhPywPp4m+pFNioKME05ahimnPphjdtfpK9SRnseSv5IYCRk3nEDEJDYBzvGeVmSUKwfJgv9TYPlSNdXMc1FyNj4tNpfR8hxzHuYJHSg2dxQkcE8oa9dWZa8bTixiEpurEz/i77GEzq1lXRhkoEDdcKpPLGISm7ebgXaE+BMBsdDXMpCxwBlRHfDF9HG7hegQESd1qA6lCkRaSJajIcKLJF+rYm0N1BL+KgaxiKkkB0va5dHR0XslkZvwIgaxWGmvifWiuxK8DO2/3yY22zfaGcPiyRcBdYpi1JzFvE/5Ap34m+qkKW0x2BOdAIqAejEXOcMEn83PzycV1wxntHQFMhy8TPpk7uMrdFX2mMy6+mj47YLgFhYW7qLXwrL6M4Oj5NhRYkFZSxl0kaMCFHzVyOZW3dKQljSDcB6PfsKcseSXef3mB2Yj8GVeYPohg1fAWPcBE/OfYU3iL2fDag2a80fy/0I43itgKyLf9EcdFXXQD71EVz523inSm3eJLtGg04Ff51ZAGvo3xAecASn8VlaIoQAAAABJRU5ErkJggg==')!important;}#CybotCookiebotDialogDetailFooter{background-color:#f4f4f4!important;text-align:left!important;}</style><style type="text/css" id="text_styles_paragraph_viewer" class="text_styles"></style><style type="text/css" class="typekit-kit fonts" data-id="aaa0f160-0765-4f9d-a32e-f142b5d901ea" data-provider="typekit" data-fonts-and-variations="jcyh|i3||jcyh|n4">@font-face{font-family:jcyh;src:url(https://use.typekit.net/af/207724/00000000000000007735a1db/30/l?subset_id=1&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/207724/00000000000000007735a1db/30/d?subset_id=1&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/207724/00000000000000007735a1db/30/a?subset_id=1&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:jcyh;src:url(https://use.typekit.net/af/a96fc4/00000000000000007735a1de/30/l?subset_id=1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/a96fc4/00000000000000007735a1de/30/d?subset_id=1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/a96fc4/00000000000000007735a1de/30/a?subset_id=1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}</style><style type="text/css" id="text_styles_link_viewer" class="text_styles"></style><style data-emotion="css" data-s=""></style></head><body><div id="root"><style class=""> html, body { width: 100%; height: 100%; } body { margin: 0; padding: 0; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial, sans-serif; color: #282828; -webkit-tap-highlight-color: rgba(0,0,0,0); } * ::selection { background-color: #B8B8B8; } a, button, label, div, span, input, *:hover { -webkit-tap-highlight-color: rgba(0,0,0,0); } h1, h2, h3, h4, h5 { margin: 0; } </style><main class="mag viewer-type-horizontal pages-pos-normal">
-    <div class="mag-pages-container">
+    // Define portfolioDescriptions variable
+    const portfolioDescriptions = document.querySelectorAll(".grid-item p");
+
+    portfolioDescriptions.forEach((description) => {
+      description.addEventListener("click", () => {
+        description.classList.toggle("show-more");
+      });
+    });
+  });
+</script>
+	
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+
+  <header>
+    <nav>
+<a href="#">
+  <h1 class="title">
+    <span class="letter">K</span>
+    <span class="letter">e</span>
+    <span class="letter">t</span>
+    <span class="letter">e</span>
+    <span class="letter">v</span>
+    <span class="letter">a</span>
+    <span class="letter">n</span>
+    <span class="letter">&nbsp;</span>
+    <span class="letter">V</span>
+    <span class="letter">e</span>
+    <span class="letter">k</span>
+    <span class="letter">u</span>
+    <span class="letter">a</span>
+  </h1>
+</a>
+ <i class="hamburger-menu">&#9776;</i>
+	<ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">À propos</a></li>
+		<li><a href="#contact">Contact</a></li>      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+	 <video class="hero-video" autoplay loop muted playsinline poster="hero.jpg">
+    <source src="cucugnan.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
       <div class="container">
-        <div class="blackout"></div>
-      <article class="page center-page neighbour">
-    <div id="page-1-password-container" class="polyfill-sticky"></div>
-    <div class="page-fixed-bg-container polyfill-sticky"><div class="rmwidget widget-background" style="background-color: #ffffff">
-
-        
-
-        
-
-		
-	</div></div>
-    <div class="fixed-position-container-top polyfill-sticky"></div>
-    <div class="fixed-position-container polyfill-sticky"></div>
-    <div class="content-scroll-wrapper has-vertical-scroll">
-      <div class="content-bounds" style="width: 1920px; height: 2520px;">
-        <div class="page-content-container" style="width: 1024px; height: 1344px; top: 0px; left: 0px; zoom: 1.875;"><div class="animation-container" style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 0.25; left: 690px; top: 52px; width: 99px; height: 80px; z-index: 307;"><style>@keyframes animation_2_1 {
-	0% {transform: matrix(1,0,0,1,0,0); opacity: 1; animation-timing-function: linear}
-	100% {transform: matrix(1,0,0,1,0,0); opacity: 0.25; }
-}
-</style><div class="rmwidget widget-text-v3" data-id="64a42c92343d8d003fa2dfd9" style="left: 0px; top: 0px; width: 99px; height: 80px; z-index: 307;"><div class="css-14sjbyw eidf37h0"><div class="text-viewer"><p style="line-height:40px;font-family:jcyh;font-weight:300;font-size:20px" class="view-mode unstyled align-left"><span style="color:rgba(0, 0, 0, 1);font-family:jcyh;font-style:italic;font-weight:300;font-size:20px">illustration</span></p><p style="line-height:40px" class="view-mode unstyled align-left"><br></p></div></div></div></div><div class="rmwidget widget-text-v3" data-id="64a11e4d0aa87500642b50f9" style="left: 20px; top: 31px; width: 641px; height: 20px; z-index: 303;"><div class="css-14sjbyw eidf37h0"><div class="text-viewer"><p style="line-height:20px;padding-right:0;font-family:jcyh;font-weight:400;font-size:10px" class="view-mode unstyled align-left"><span style="font-family:jcyh;font-style:normal;font-weight:400;font-size:10px;color:rgba(0, 0, 0, 1)">creating traditionnal animations and illustrations,  <a class="link-1 maglink back-to-top" target="_self" href="https://readymag.com/u145854748/4319212/illustration/">contact</a> me if you want to collaborate.  </span></p></div></div></div><div class="rmwidget widget-text-v3" data-id="64a11cc9b34d14001ce763c7" style="left: 20px; top: 49px; width: 357px; height: 40px; z-index: 302;"><div class="css-14sjbyw eidf37h0"><div class="text-viewer"><p style="line-height:40px;font-family:jcyh;font-weight:300;font-size:30px" class="view-mode unstyled align-left"><span style="color:rgba(0, 0, 0, 1);font-family:jcyh;font-style:italic;font-weight:300;font-size:30px">ketevan vekua.</span></p></div></div></div><div class="rmwidget widget-text-v3" data-id="64a42d5a13425200146c6dd9" style="left: 524px; top: 52px; width: 99px; height: 80px; z-index: 310;"><div class="css-14sjbyw eidf37h0"><div class="text-viewer"><p style="line-height:40px;font-family:jcyh;font-weight:300;font-size:20px" class="view-mode unstyled align-left"><span style="color:rgba(0, 0, 0, 1);font-family:jcyh;font-style:italic;font-weight:300;font-size:20px"><a class="link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4 maglink" target="_self" href="https://readymag.com/u145854748/4319212/animation/">animation</a></span></p><p style="line-height:40px" class="view-mode unstyled align-left"><br></p></div></div></div><div class="rmwidget widget-picture" data-id="64a42cef7b297a2f087339b1" style="left: 20px; top: 120px; width: 480px; height: 360px; z-index: 308;"><img src="./Project_files/image-b1c991c4-8a33-4ea2-a532-53863eb1c690.png" class="viewable" style="opacity: 1;"></div><div class="rmwidget widget-picture" data-id="64a42d495f0d01001af9a1b1" style="left: 524px; top: 121px; width: 480px; height: 360px; z-index: 309;"><img src="./Project_files/image-4d17b966-660e-43a7-93a8-4d19a54321f3.png" class="viewable" style="opacity: 1;"></div><div class="rmwidget widget-picture" data-id="64a430cf462c330061a461ee" style="left: 20px; top: 500px; width: 482px; height: 346px; z-index: 311;"><img src="./Project_files/image-c3446fb5-2803-4ffb-b21d-ea09025b5f8f.jpg" class="viewable" style="opacity: 1;"></div></div>
+        <h1>Ketevan Vekua</h1>
+        <p>Animatrice 2D numérique et traditionelle</p>
+        <a href="#portfolio" class="cta">Découvrez mes réalisations</a>
       </div>
-    </div>
-  </article><article class="page last next-page neighbour hidden">
-    <div id="page-2-password-container" class="polyfill-sticky"></div>
-    <div class="page-fixed-bg-container polyfill-sticky"><div class="rmwidget widget-background" style="background-color: #ffffff">
+    </section>
 
+    <section id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="grid">
+          <!-- Ajoutez vos réalisations ici -->
+<div class="grid-item project1">
+    <img src="projet_en_cours1.jpg" alt="Projet en cours 1">
+    <h3>(en développement) Série TV "Mots oubliés"</h3>
+    <p>"Mots oubliés" est une série télévisée qui suit un ours et un garçon alors qu'ils pêchent des mots oubliés dans une rivière géorgienne. Leur but est d'enseigner ces mots rares aux adultes et aux enfants à travers chaque épisode de la série. </p>
+<p>La série est produite par les studios de films "Kvali XXI" et "Georgian Film-Abkhazeti". En tant que membre clé de l'équipe de production, j'ai écrit le scénario, conçu les personnages et les décors, ainsi que créé le storyboard pour chaque épisode en cours de production.</p>
+	</div>
+          <div class="grid-item">
         
+    <video src="projet1.mp4" poster="projet1.jpg" alt="Antochka" controls></video>
+            <h3>Antochka</h3>
+            <p>Animation mettant en scène des personnages sous forme de marionnettes dessinées à la main. Réalisée avec le logiciel CelAction, cette séquence d'animation montre des techniques d'animation traditionnelles combinées à des outils numériques modernes</p>
+          </div>
+          <div class="grid-item">
+            <video src="projet2.mp4" poster="projet2.jpg" alt="Vapeur " controls></video>
+            <h3>Vapeur</h3>
+            <p>"Vapeur" est une animation qui nous emmène à suivre le voyage d'un bus, naviguant entre rêve et réalité. Le rythme de la sonnette guide le spectateur tout au long de cette aventure visuelle. Entièrement dessinée et animée à la main. Montée avec soin sur Adobe Premiere.</p>
+          </div>
 
-        
+	 <div class="grid-item">
+            <video src="projet3.mp4" poster="projet3.jpg" alt="Reka " controls></video>
+            <h3>Reka (trailer)</h3>
+	    <p>Le vent dans le sable - Un moment intemporel dans les roseaux, entre l'enfance et sa disparition, fixé dans des lignes qui ressemblent à des poèmes haïkus. Des dessins tendres en noir et blanc d'après un poème d'Arseni Tarkowski, le père du célèbre réalisateur.</p>
+          </div>
 
-		
-	</div></div>
-    <div class="fixed-position-container-top polyfill-sticky"></div>
-    <div class="fixed-position-container polyfill-sticky"></div>
-    <div class="content-scroll-wrapper has-vertical-scroll">
-      <div class="content-bounds" style="width: 1920px; height: 2520px;">
-        <div class="page-content-container" style="width: 1024px; height: 1344px; top: 0px; left: 0px; zoom: 1.875;"><div class="animation-container" style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 0.2; left: 524px; top: 52px; width: 99px; height: 80px; z-index: 308;"><style>@keyframes animation_1_1 {
-	0% {transform: matrix(1,0,0,1,0,0); opacity: 1; animation-timing-function: linear}
-	100% {transform: matrix(1,0,0,1,0,0); opacity: 0.2; }
-}
-</style><div class="rmwidget widget-text-v3" data-id="64a42fadba32890059dde7bf" style="left: 0px; top: 0px; width: 99px; height: 80px; z-index: 308;"><div class="css-14sjbyw eidf37h0"><div class="text-viewer"><p style="line-height:40px;font-family:jcyh;font-weight:300;font-size:20px" class="view-mode unstyled align-left"><span style="color:rgba(0, 0, 0, 1);font-family:jcyh;font-style:italic;font-weight:300;font-size:20px">animation</span></p><p style="line-height:40px" class="view-mode unstyled align-left"><br></p></div></div></div></div><div class="rmwidget widget-text-v3" data-id="64a42fadba32890059dde7bb" style="left: 20px; top: 31px; width: 641px; height: 20px; z-index: 303;"><div class="css-14sjbyw eidf37h0"><div class="text-viewer"><p style="line-height:20px;padding-right:0;font-family:jcyh;font-weight:400;font-size:10px" class="view-mode unstyled align-left"><span style="font-family:jcyh;font-style:normal;font-weight:400;font-size:10px;color:rgba(0, 0, 0, 1)">creating traditionnal animations and illustrations,  <a class="link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4 maglink" target="_self" href="https://readymag.com/u145854748/4319212/illustration/">contact</a> me if you want to collaborate.  </span></p></div></div></div><div class="rmwidget widget-text-v3" data-id="64a42fadba32890059dde7b9" style="left: 20px; top: 49px; width: 357px; height: 40px; z-index: 302;"><div class="css-14sjbyw eidf37h0"><div class="text-viewer"><p style="line-height:40px;font-family:jcyh;font-weight:300;font-size:30px" class="view-mode unstyled align-left"><span style="color:rgba(0, 0, 0, 1);font-family:jcyh;font-style:italic;font-weight:300;font-size:30px">ketevan vekua.</span></p></div></div></div><div class="rmwidget widget-text-v3" data-id="64a42fadba32890059dde7bc" style="left: 690px; top: 52px; width: 99px; height: 80px; z-index: 307;"><div class="css-14sjbyw eidf37h0"><div class="text-viewer"><p style="line-height:40px;font-family:jcyh;font-weight:300;font-size:20px" class="view-mode unstyled align-left"><span style="color:rgba(0, 0, 0, 1);font-family:jcyh;font-style:italic;font-weight:300;font-size:20px"><a class="link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4 maglink" target="_self" href="https://readymag.com/u145854748/4319212/illustration/">illustration</a></span></p><p style="line-height:40px" class="view-mode unstyled align-left"><br></p></div></div></div></div>
+	 <div class="grid-item">
+            <video src="projet4.mp4" poster="projet4.jpg" alt="Dans la terre " controls></video>
+            <h3>Dans la terre (teaser)</h3>
+	    <p>"Dans la terre" est une animation réalisée à KASK en utilisant différentes techniques, notamment la peinture sur verre, la stop motion et les éléments organiques.</p>
+          </div>
+
+          <!-- Continuez d'ajouter d'autres réalisations -->
+        </div>
       </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>À propos</h2>
+        <div class="about-content">
+          <img src="ketevan.jpg" alt="Ketevan Vekua">
+          <div class="about-text">
+
+<p>Bonjour ! Je suis Ketevan Vekua, animatrice passionnée par la création d'animations 2D. J'ai travaillé avec divers studios tels que Beast Animation et Zorobabel, ainsi qu'à l'étranger, en Géorgie. Je suis diplômée de Belgium KASK (The Royal Academy of Fine Arts) en animation.</p>
+<p>Fort de ces expériences, j'ai développé une expertise en matière d'animation et de motion design.</p><br>
+            <p>Je suis toujours à la recherche de nouvelles opportunités pour améliorer mes compétences et créer des animations de qualité pour mes clients. Si vous avez un projet en tête ou souhaitez en savoir plus sur mon travail, n'hésitez pas à me contacter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contactez-moi</h2>
+       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mgebrqbp" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Nom :</label>
+    <input type="text" name="name" id="full-name" placeholder="Prénom et nom" required="">
+    <label for="email-address">Email :</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <label for="message">Message :</label>
+    <textarea rows="5" name="message" id="message" placeholder="Écrivez votre message ici." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Soumission du formulaire de contact">
+  </fieldset>
+  <input type="submit" value="Envoyer">
+</form>
+</div>
+</section>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2023 Ketevan Vekua - Tous droits réservés</p>
     </div>
-  </article></div>
-      <div class="above-pages-container"></div>
-    </div>
+  </footer>
+</body>
+</html>
 
-    
-
-    
-  <style id="page-transition-style" type="text/css" class="">        .mag .mag-pages-container .container .page {
-          -webkit-transition:	all 550ms cubic-bezier(0.40, 0.24, 0.40, 1);          transition: all 550ms cubic-bezier(0.40, 0.24, 0.40, 1);        }
-        .mag .mag-pages-container .container .page.center-page {
-          -webkit-transition:	all 545ms cubic-bezier(0.40, 0.24, 0.40, 1);          transition: all 545ms cubic-bezier(0.40, 0.24, 0.40, 1);        }
-        </style><div class="toolbar for-viewer default">
-
-		
-
-		
-
-		
-			<div class="toolbar-branding"><div class="rm-branding">
-	
-		<a class="rm-branding-button" href="https://readymag.com/?utm_source=made_with_readymag&amp;utm_medium=referral&amp;utm_campaign=4319212" target="_blank"></a>
-	
-	</div></div>
-		
-
-		
-
-		
-
-		
-
-	</div><style id="page-position-style" type="text/css" class="">        .mag .mag-pages-container .container {
-          left: 0px;
-          width: 1920px;
-        }
-        .mag .mag-pages-container .container .page {
-          left: 0px;
-          width: 1920px;
-        }
-          .mag .mag-pages-container .container .page.prev-page {
-            -webkit-transform: translateX(-1920px) ;
-            transform: translateX(-1920px) ;
-          }
-          .mag .mag-pages-container .container .page.center-page {
-            -webkit-transform: translateX(0) ;
-            transform: translateX(0) ;
-          }
-          .mag .mag-pages-container .container .page.next-page {
-            -webkit-transform: translateX(1920px) ;
-            transform: translateX(1920px) ;
-          }</style></main></div><div id="mags"></div><div id="service-pages"></div><div class="popups"></div><div id="tmp"></div><div id="fake" style="position:fixed;opacity:1"></div><script src="./Project_files/bundle.cc8492fdb83826542e4f.js"></script><div id="text-global-styles"><style class=""> .align-left { text-align: left !important; } .align-center { text-align: center !important; } .align-right { text-align: right !important; } .align-justify { text-align: justify !important; } .unordered-list-item { padding: 0; margin: 0; list-style-type: none; } .unordered-list-item div[data-offset-key]:before, .unordered-list-item > li:before { white-space: nowrap; content: "•\00a0"; } .ordered-list-item { padding: 0; margin: 0; list-style-type: none; } .ordered-list-item div[data-offset-key]:before, .ordered-list-item > li:before { white-space: nowrap; counter-increment: ordered-key; content: counter(ordered-key)"."; } .style-089b84d1-298c-4db9-bfcb-6b07adb474f8 { color: rgba(34, 34, 34, 1); font-family: Roboto; font-style: normal; text-align: left; font-size: 48px; font-weight: 700; line-height: 60px; } .style-26173ced-be08-4695-98af-066d938fe9cb { color: rgba(34, 34, 34, 1); font-family: Georgia; font-style: normal; text-align: left; font-size: 24px; font-weight: 400; line-height: 30px; } .style-9f7fc04a-94f7-4873-8f5f-e56aa2586b74 { color: rgba(34, 34, 34, 1); font-family: Georgia; font-style: normal; text-align: left; font-size: 18px; font-weight: 400; line-height: 23px; } .style-527278b6-919e-42f7-a461-fe94ff5c6ac9 { color: rgba(34, 34, 34, 0.5); font-family: Georgia; font-style: italic; text-align: left; font-size: 14px; line-height: 18px; font-weight: 400; } .link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4 { text-decoration: none; padding-bottom: 1px; background: none; color: rgba(0, 0, 0, 1); } .link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4 * { color: rgba(0, 0, 0, 1); } .link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4 .hover, .link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4:hover { text-decoration: none; padding-bottom: 1px; background: none; color: rgba(151, 151, 151, 1) !important; } .link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4 .hover *, .link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4:hover * { color: rgba(151, 151, 151, 1) !important; } .link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4.current { text-decoration: none; padding-bottom: 1px; background: none; color: rgba(0, 128, 255, 1); } .link-style-ef850a49-2b38-49f3-b1e1-04f4399ebaa4.current * { color: rgba(0, 128, 255, 1); } .link-1 { text-decoration: none; padding-bottom: 1px; background: none; color: rgba(0, 0, 0, 1); } .link-1 * { color: rgba(0, 0, 0, 1); } .link-1 .hover, .link-1:hover { text-decoration: none; padding-bottom: 1px; background: none; color: rgba(151, 151, 151, 1) !important; } .link-1 .hover *, .link-1:hover * { color: rgba(151, 151, 151, 1) !important; } .link-1.current { text-decoration: none; padding-bottom: 1px; background: none; color: rgba(0, 128, 255, 1); } .link-1.current * { color: rgba(0, 128, 255, 1); } .default-list-style.edit-mode .editor-block-wrapper { display: flex; } .default-list-style.view-mode { display: flex; } .default-list-style.view-mode:before { display: inline-block; } .unordered-list-item.default-list-style.edit-mode .editor-block-wrapper:before { content: "•\00a0"; display: inline-block; } .unordered-list-item.default-list-style.edit-mode div[data-offset-key]:before { content: "•\00a0"; display: none; } .ordered-list-item.default-list-style.edit-mode .editor-block-wrapper:before { counter-increment: ordered-key; content: counter(ordered-key)"."; display: inline-block; white-space: nowrap; } .ordered-list-item.default-list-style.edit-mode div[data-offset-key]:before { counter-increment: ordered-key; content: counter(ordered-key)"."; display: none; white-space: nowrap; } .unordered-list-item .default-list-style.view-mode:before { content: "•\00a0"; } </style></div></body></html>
